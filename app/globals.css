@@ -24,3 +24,52 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+* {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+   /* Updated border radius */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4b5563;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Show scrollbar on hover */
+.hover\:scroll-auto:hover {
+  overflow-x: auto;
+}
+
