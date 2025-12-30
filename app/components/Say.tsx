@@ -28,10 +28,10 @@ export default function Say() {
         {/* RIGHT SIDE IMAGE */}
         <div className="lg:w-1/2 w-full h-80 sm:h-96  relative">
           <Image
-            src="/school-transform.jpg" // replace with your image path
-            alt="Vista Charter Public School"
+            src="/images/asn-principal.jpg" // replace with your image path
+            alt="ASN Public School"
             fill
-            className="object-cover rounded-lg shadow-lg"
+            className="object-cover shadow-lg"
           />
         </div>
       </div>

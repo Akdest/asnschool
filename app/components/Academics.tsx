@@ -43,7 +43,7 @@ export default function Academics() {
 
           <div className="relative w-full h-[460px]">
             <Image
-              src="/images/academics-foundation.jpg"
+              src="/images/foundation.jpg"
               alt="Foundation Years"
               fill
               className="object-cover"
@@ -55,7 +55,7 @@ export default function Academics() {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1 relative w-full h-[460px]">
             <Image
-              src="/images/academics-middle.jpg"
+              src="/images/middle.jpg"
               alt="Middle School"
               fill
               className="object-cover"
