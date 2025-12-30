@@ -17,18 +17,22 @@ const navItems: NavItem[] = [
   {
     title: "About",
     sub: [
-      { label: "Overview", href: "/about/overview" },
-      { label: "Vision & Mission", href: "/about/vision" },
-      { label: "Principal’s Desk", href: "/about/principal" },
+      { label: "Introduction", href: "/About/Introduction" },
+      { label: "Management", href: "/About/Management" },
+      { label: "School Committees", href: "/About/SchoolCommittee" },
     ],
     image: "/hero/hero1.jpg",
   },
   {
     title: "Academics",
     sub: [
-      { label: "Curriculum", href: "/academics/curriculum" },
-      { label: "Departments", href: "/academics/departments" },
-      { label: "Assessment", href: "/academics/assessment" },
+      { label: "Inquiry Based Learning", href: "/academics/inquiry-based-learning" },
+      { label: "Early Years Program", href: "/academics/early-years-program" },
+      { label: "Primary School", href: "/academics/primary-school" },
+      { label: "Secondary School", href: "/academics/secondary-school" },
+      { label: "Middle School", href: "/academics/middle-school" },
+      { label: "High School", href: "/academics/high-school" },
+      
     ],
     image: "/hero/hero2.jpg",
   },
@@ -37,7 +41,6 @@ const navItems: NavItem[] = [
     sub: [
       { label: "Process", href: "/admissions/process" },
       { label: "Fee Structure", href: "/admissions/fees" },
-      { label: "Apply Online", href: "/admissions/apply" },
     ],
     image: "/hero/hero3.jpg",
   },
@@ -50,6 +53,11 @@ const navItems: NavItem[] = [
     ],
     image: "/hero/hero4.jpg",
   }, 
+   {
+    title: "News & Events",
+    href: "/news-events",
+    image: "/hero/hero5.jpg",
+  },
   {
     title: "Contact",
     href: "/contact",

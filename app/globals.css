@@ -46,18 +46,18 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #4b5563;
+  background: #000000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2563eb;
-  border-radius: 100px;
+  background: #ffffff;
+  border-radius: 00px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+  background: #ffff00;
 }
 /* Hide scrollbar */
 .scrollbar-hide::-webkit-scrollbar {

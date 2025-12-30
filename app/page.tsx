@@ -8,6 +8,7 @@ import StudentsLife from "./components/StudentsLife";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
+import NewsEvents from "./components/NewsEvents";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
    <Admission/>
    <Academics/>
    <StudentsLife/>
+   <NewsEvents />
    <Testimonials/>
    <Contact/>
    <Footer />
