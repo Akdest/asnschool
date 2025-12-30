@@ -51,13 +51,13 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: #555555;
   border-radius: 00px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffff00;
+  background: #ffffff;
 }
 /* Hide scrollbar */
 .scrollbar-hide::-webkit-scrollbar {

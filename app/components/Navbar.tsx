@@ -26,12 +26,11 @@ const navItems: NavItem[] = [
   {
     title: "Academics",
     sub: [
-      { label: "Inquiry Based Learning", href: "/academics/inquiry-based-learning" },
-      { label: "Early Years Program", href: "/academics/early-years-program" },
-      { label: "Primary School", href: "/academics/primary-school" },
-      { label: "Secondary School", href: "/academics/secondary-school" },
-      { label: "Middle School", href: "/academics/middle-school" },
-      { label: "High School", href: "/academics/high-school" },
+      { label: "Inquiry Based Learning", href: "/Academics/InquiryBasedLearning" },
+      { label: "Early Years Program", href: "/Academics/EarlyYearsProgram" },
+      { label: "Primary School", href: "/Academics/PrimarySchool" },
+      { label: "Secondary School", href: "/Academics/SecondarySchool" },
+      { label: "High School", href: "/Academics/HighSchool" },
       
     ],
     image: "/hero/hero2.jpg",
@@ -39,28 +38,27 @@ const navItems: NavItem[] = [
   {
     title: "Admissions",
     sub: [
-      { label: "Process", href: "/admissions/process" },
-      { label: "Fee Structure", href: "/admissions/fees" },
+      { label: "Process", href: "/Admissions/Process" },
+      { label: "Fee Structure", href: "/Admissions/FeeStructure" },
     ],
     image: "/hero/hero3.jpg",
   },
   {
     title: "Student Life",
     sub: [
-      { label: "Clubs", href: "/student-life/clubs" },
-      { label: "Sports", href: "/student-life/sports" },
-      { label: "Events", href: "/student-life/events" },
+      { label: "Clubs", href: "/StudentsLife/Clubs" },
+      { label: "Sports", href: "/StudentsLife/Sports" },
     ],
     image: "/hero/hero4.jpg",
   }, 
    {
     title: "News & Events",
-    href: "/news-events",
+    href: "/NewsEvents",
     image: "/hero/hero5.jpg",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "/Contact",
     image: "/hero/hero5.jpg",
   },
 ];
