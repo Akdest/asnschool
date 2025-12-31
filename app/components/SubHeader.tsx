@@ -20,7 +20,7 @@ export default function SubHeader({
       }}
     >
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gray-600/70" />
+      <div className="absolute inset-0 bg-neutral-900/80" />
 
       {/* CONTENT */}
       <div className="relative z-10 w-full px-6 sm:px-10 lg:px-16 text-center">

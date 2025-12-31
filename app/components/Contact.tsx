@@ -9,15 +9,22 @@ export default function Contact() {
     <section className="relative py-32 overflow-hidden">
       {/* BACKGROUND IMAGE */}
 <div className="fixed inset-0 -z-10">
-  <Image
+  <video
+    src="/images/asn-sports.mp4"
+    autoPlay
+    loop
+    muted
+    className="object-cover w-full h-full"
+  />
+  {/* <Image
     src="/images/asn-sports.jpg"
     alt="Campus Background"
     fill
     className="object-cover opacity-[0.7]"
     priority
-  />
+  /> */}
   {/* NEUTRAL OVERLAY */}
-  {/* <div className="absolute inset-0 bg-transparent" /> */}
+  <div className="absolute inset-0 bg-neutral-900/40" />
 </div>
 
 

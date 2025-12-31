@@ -116,8 +116,8 @@ export default function Navbar() {
                      <Link href="/">
 
           <div className="flex items-center gap-3">
-            <Image src="/logo.png" alt="Logo" width={44} height={44} />
-            <span className="font-bold text-lg">ASN Public School</span>
+            <Image src="/images/asn-logo.png" alt="Logo" width={64} height={64} />
+            {/* <span className="font-bold text-lg">ASN Public School</span> */}
           </div>
           </Link>
 
@@ -143,7 +143,7 @@ export default function Navbar() {
           {/* TOP BAR */}
           <Link href="/">
           <div className="absolute top-6 left-6 flex items-center gap-3">
-            <Image src="/logo.png" alt="Logo" width={42} height={42} />
+            <Image src="/images/asn-logo.png" alt="Logo" width={42} height={42} />
             <span className="font-bold text-lg">ABC Public School</span>
           </div>
 </Link>

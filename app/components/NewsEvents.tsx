@@ -231,7 +231,7 @@ export default function NewsEvents() {
         {/* CTA */}
         <div className="mt-32 text-center">
           <Link
-            href="/events"
+            href="/NewsEvents"
             className="inline-block text-lg font-semibold tracking-wide underline underline-offset-8 hover:opacity-70 focus:outline-none text-gray-700"
           >
             View All Events →
