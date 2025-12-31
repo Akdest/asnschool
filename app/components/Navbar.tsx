@@ -144,7 +144,7 @@ export default function Navbar() {
           <Link href="/">
           <div className="absolute top-6 left-6 flex items-center gap-3">
             <Image src="/images/asn-logo.png" alt="Logo" width={42} height={42} />
-            <span className="font-bold text-lg">ABC Public School</span>
+            <span className="font-bold text-lg">ASN Public School</span>
           </div>
 </Link>
           <button
