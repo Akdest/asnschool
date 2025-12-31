@@ -87,25 +87,26 @@ export default function Hero() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate-slide-up delay-300">
-             <Link href="#Admissions"> 
-              <button
-                className="
-                  px-8 sm:px-10 py-3 sm:py-4
-                  bg-white text-black
-                  text-sm sm:text-base
-                  font-medium uppercase tracking-wider
-                  transition-all duration-300
-                  hover:translate-y-[-2px]
-                  hover:shadow-xl
-                  cursor-pointer
-                "
-              >
-                Admissions
-              </button>
-              </Link>
+             <a href="#Admissions"> 
+                <button
+                  className="
+                    px-8 sm:px-10 py-3 sm:py-4
+                    bg-white text-black
+                    text-sm sm:text-base
+                    font-medium uppercase tracking-wider
+                    transition-all duration-300
+                    hover:translate-y-[-2px]
+                    hover:shadow-xl
+                    cursor-pointer
+                  "
+                  
+                >
+                  Admissions
+                </button>
+              </a>
 
 
-            <Link href="#Academics">
+            <a href="#Academics">
               <button
                 className="
                   px-8 sm:px-10 py-3 sm:py-4
@@ -120,7 +121,7 @@ export default function Hero() {
               >
                 About the School
               </button>
-              </Link>
+              </a>
             </div>
 
           </div>
