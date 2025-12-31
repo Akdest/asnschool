@@ -23,7 +23,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "12 Dec 2025",
       description:
         "An immersive celebration of culture, music, art, and student talent.",
-      image: "/events/winter.jpg",
+      image: "/images/asn-winter-carnival.jpg",
       href: "/events/winter-carnival",
     },
     {
@@ -31,7 +31,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "18 Dec 2025",
       description:
         "A showcase of athletic excellence, teamwork, and discipline.",
-      image: "/events/sports.jpg",
+      image: "/images/asn-annual-sports.jpg",
       href: "/events/sports-day",
     },
     {
@@ -39,7 +39,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "22 Dec 2025",
       description:
         "A festive gathering celebrating joy, harmony, and traditions.",
-      image: "/events/christmas.jpg",
+      image: "/images/asn-christmas.jpg",
       href: "/events/christmas-assembly",
     },
     {
@@ -47,7 +47,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "26 Dec 2025",
       description:
         "Student artwork displayed in a curated exhibition format.",
-      image: "/events/art.jpg",
+      image: "/images/asn-science-innovation.jpg",
       href: "/events/art-exhibition",
     },
     {
@@ -55,7 +55,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "29 Dec 2025",
       description:
         "An inspiring session connecting students with alumni journeys.",
-      image: "/events/alumni.jpg",
+      image: "/images/asn-winter-carnival.jpg",
       href: "/events/alumni-meet",
     },
   ],
@@ -66,7 +66,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "14 Nov 2025",
       description:
         "Performances and activities celebrating childhood and creativity.",
-      image: "/events/children.jpg",
+      image: "/images/asn-children-day.jpg",
       href: "/events/childrens-day",
     },
     {
@@ -74,7 +74,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "18 Nov 2025",
       description:
         "Hands-on projects highlighting curiosity and problem solving.",
-      image: "/events/science.jpg",
+      image: "/images/asn-science-innovation.jpg",
       href: "/events/science-fair",
     },
     {
@@ -82,7 +82,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "21 Nov 2025",
       description:
         "A competitive forum sharpening logic, speech, and confidence.",
-      image: "/events/debate.jpg",
+      image: "/images/asn-debate.jpg",
       href: "/events/debate",
     },
     {
@@ -90,7 +90,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "25 Nov 2025",
       description:
         "Testing analytical thinking through structured challenges.",
-      image: "/events/math.jpg",
+      image: "/images/asn-club.jpg",
       href: "/events/math-olympiad",
     },
     {
@@ -98,7 +98,7 @@ const eventsByMonth: Record<string, SchoolEvent[]> = {
       date: "28 Nov 2025",
       description:
         "An interactive session aligning parents with academic vision.",
-      image: "/events/parents.jpg",
+      image: "/images/asn-bg.jpg",
       href: "/events/orientation",
     },
   ],

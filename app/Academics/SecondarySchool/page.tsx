@@ -48,7 +48,7 @@ export default function SecondarySchool() {
       <SubHeader
         title="Secondary School"
         subtitle="Building critical thinkers and future leaders – Grades 9–10"
-        image="/images/secondary-school.jpg"
+        image="/images/asn-club.jpg"
       />
 
       <section className="bg-white py-32">

@@ -47,7 +47,7 @@ export default function Process() {
       <SubHeader
         title="Admissions Process"
         subtitle="Join our school community and embark on a transformative educational journey."
-        image="/images/admissions-hero.jpg"
+        image="/images/asn-middle.jpg"
       />
 
       <section className="bg-white py-32">
@@ -92,7 +92,7 @@ export default function Process() {
           <div className="bg-neutral-100 py-24 text-center relative overflow-hidden">
             <div className="absolute inset-0 opacity-20">
               <Image
-                src="/images/admissions-bg.jpg"
+                src="/images/asn-sports.jpg"
                 alt="Admissions Background"
                 fill
                 className="object-cover"

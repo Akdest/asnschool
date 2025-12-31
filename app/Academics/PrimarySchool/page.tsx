@@ -48,7 +48,7 @@ export default function PrimarySchool() {
       <SubHeader
         title="Primary School"
         subtitle="Nurturing curiosity and confidence from Grade 1–5"
-        image="/images/primary-school.jpg"
+        image="/images/asn-sports.jpg"
       />
 
       <section className="bg-white py-32">

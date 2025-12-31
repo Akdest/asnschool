@@ -11,25 +11,25 @@ const managementTeam = [
     name: "Dr. Collin Felch",
     role: "Superintendent",
     bio: "Dr. Felch leads the institution with vision and integrity, ensuring academic excellence and holistic development.",
-    photo: "/management/collin.jpg",
+    photo: "/images/asn-principal.jpg",
   },
   {
     name: "Mrs. Ananya Roy",
     role: "Principal",
     bio: "With over 15 years of experience, Mrs. Roy fosters a learning environment where every student thrives.",
-    photo: "/management/ananya.jpg",
+    photo: "/images/asn-principal.jpg",
   },
   {
     name: "Mr. Rajiv Mehta",
     role: "Head of Operations",
     bio: "Mr. Mehta ensures smooth functioning of school operations, maintaining the highest standards in administration.",
-    photo: "/management/rajiv.jpg",
+    photo: "/images/asn-principal.jpg",
   },
   {
     name: "Ms. Sneha Kapoor",
     role: "Head of Academic Affairs",
     bio: "Ms. Kapoor drives curriculum development and teacher mentorship, blending innovation with tradition.",
-    photo: "/management/sneha.jpg",
+    photo: "/images/asn-principal.jpg",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function ManagementPage() {
       <SubHeader
         title="Management Team"
         subtitle="Meet the leadership guiding our institution towards excellence."
-        image="/images/management-header.jpg"
+        image="/images/asn-debate.jpg"
       />
 
       {/* MANAGEMENT GRID */}

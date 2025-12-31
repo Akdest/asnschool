@@ -48,7 +48,7 @@ export default function InquiryBasedLearning() {
       <SubHeader
         title="Inquiry-Based Learning"
         subtitle="Empowering students to explore, question, and discover."
-        image="/images/inquiry-based.jpg"
+        image="/images/asn-play.jpg"
       />
 
       <section className="bg-white py-32">

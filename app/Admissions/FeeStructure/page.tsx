@@ -68,7 +68,7 @@ export default function FeeStructure() {
       <SubHeader
         title="Fee Structure"
         subtitle="Transparent fees for clarity and peace of mind"
-        image="/images/fees-hero.jpg"
+        image="/images/foundation.jpg"
       />
 
       <section className="bg-white py-32">

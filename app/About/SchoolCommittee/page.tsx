@@ -10,37 +10,37 @@ const committeeMembers = [
     name: "Mr. Rakesh Sharma",
     role: "Chairperson",
     bio: "Oversees school policies and strategic decisions, ensuring alignment with vision and mission.",
-    photo: "/committee/rakesh.jpg",
+    photo: "/images/asn-principal.jpg",
   },
   {
     name: "Mrs. Meera Kapoor",
     role: "Secretary",
     bio: "Coordinates meetings, documentation, and official communication within the committee.",
-    photo: "/committee/meera.jpg",
+    photo: "/images/asn-principal.jpg",
   },
   {
     name: "Dr. Amit Verma",
     role: "Academic Advisor",
     bio: "Provides guidance on curriculum development, teaching methodologies, and student assessment.",
-    photo: "/committee/amit.jpg",
+    photo: "/images/asn-principal.jpg",
   },
   {
     name: "Ms. Priya Nair",
     role: "Event Coordinator",
     bio: "Manages school events, extracurricular activities, and student engagement programs.",
-    photo: "/committee/priya.jpg",
+    photo: "/images/asn-principal.jpg",
   },
   {
     name: "Mr. Sunil Joshi",
     role: "Finance Advisor",
     bio: "Oversees budgeting, resource allocation, and financial planning for school initiatives.",
-    photo: "/committee/sunil.jpg",
+    photo: "/images/asn-principal.jpg",
   },
   {
     name: "Mrs. Kavita Singh",
     role: "Parent Representative",
     bio: "Represents parent perspectives and ensures student welfare and community engagement.",
-    photo: "/committee/kavita.jpg",
+    photo: "/images/asn-principal.jpg",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function SchoolCommittee() {
       <SubHeader
         title="School Committee"
         subtitle="Meet the dedicated team guiding our school's policies and growth."
-        image="/images/committee-header.jpg"
+        image="/images/asn-children-day.jpg"
       />
 
       {/* COMMITTEE GRID */}

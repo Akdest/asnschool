@@ -18,87 +18,87 @@ interface EventItem {
 const EVENTS_BY_MONTH: Record<string, EventItem[]> = {
   "December 2025": [
     {
-      title: "Winter Music Concert",
-      description:
-        "An evening celebrating orchestral harmony, choir performances, and solo acts by students across grades.",
-      image: "/events/event1.jpg",
-      date: "18 Dec 2025",
-      href: "/news/winter-music-concert",
-    },
-    {
-      title: "Science & Innovation Expo",
-      description:
-        "Student-led exhibits featuring robotics, sustainability models, and real-world problem solving.",
-      image: "/events/event2.jpg",
+      title: "Winter Carnival",
       date: "12 Dec 2025",
-      href: "/news/science-expo",
+      description:
+        "An immersive celebration of culture, music, art, and student talent.",
+      image: "/images/asn-winter-carnival.jpg",
+      href: "/events/winter-carnival",
     },
     {
-      title: "Annual Sports Meet",
+      title: "Annual Sports Day",
+      date: "18 Dec 2025",
       description:
-        "A full-day event fostering discipline, teamwork, and competitive spirit.",
-      image: "/events/event3.jpg",
-      date: "06 Dec 2025",
-      href: "/news/sports-meet",
+        "A showcase of athletic excellence, teamwork, and discipline.",
+      image: "/images/asn-annual-sports.jpg",
+      href: "/events/sports-day",
     },
     {
-      title: "Inter-School Debate",
+      title: "Christmas Assembly",
+      date: "22 Dec 2025",
       description:
-        "Students engaged in structured discourse on global and social topics.",
-      image: "/events/event4.jpg",
-      date: "03 Dec 2025",
-      href: "/news/debate",
+        "A festive gathering celebrating joy, harmony, and traditions.",
+      image: "/images/asn-christmas.jpg",
+      href: "/events/christmas-assembly",
     },
     {
-      title: "Visual Arts Showcase",
+      title: "Art & Craft Exhibition",
+      date: "26 Dec 2025",
       description:
-        "Display of student artwork spanning fine art, digital media, and installations.",
-      image: "/events/event5.jpg",
-      date: "01 Dec 2025",
-      href: "/news/arts-showcase",
+        "Student artwork displayed in a curated exhibition format.",
+      image: "/images/asn-science-innovation.jpg",
+      href: "/events/art-exhibition",
+    },
+    {
+      title: "Alumni Interaction Meet",
+      date: "29 Dec 2025",
+      description:
+        "An inspiring session connecting students with alumni journeys.",
+      image: "/images/asn-winter-carnival.jpg",
+      href: "/events/alumni-meet",
     },
   ],
 
   "November 2025": [
     {
-      title: "Winter Music Concert",
+      title: "Children’s Day Program",
+      date: "14 Nov 2025",
       description:
-        "An evening celebrating orchestral harmony, choir performances, and solo acts by students across grades.",
-      image: "/events/event1.jpg",
+        "Performances and activities celebrating childhood and creativity.",
+      image: "/images/asn-children-day.jpg",
+      href: "/events/childrens-day",
+    },
+    {
+      title: "Science Innovation Fair",
       date: "18 Nov 2025",
-      href: "/news/winter-music-concert",
-    },
-    {
-      title: "Science & Innovation Expo",
       description:
-        "Student-led exhibits featuring robotics, sustainability models, and real-world problem solving.",
-      image: "/events/event2.jpg",
-      date: "12 Nov 2025",
-      href: "/news/science-expo",
-    },
-    {
-      title: "Annual Sports Meet",
-      description:
-        "A full-day event fostering discipline, teamwork, and competitive spirit.",
-      image: "/events/event3.jpg",
-      date: "06 Nov 2025",
-      href: "/news/sports-meet",
+        "Hands-on projects highlighting curiosity and problem solving.",
+      image: "/images/asn-science-innovation.jpg",
+      href: "/events/science-fair",
     },
     {
       title: "Inter-School Debate",
+      date: "21 Nov 2025",
       description:
-        "Students engaged in structured discourse on global and social topics.",
-      image: "/events/event4.jpg",
-      date: "03 Nov 2025",
-      href: "/news/debate",
+        "A competitive forum sharpening logic, speech, and confidence.",
+      image: "/images/asn-debate.jpg",
+      href: "/events/debate",
     },
     {
-      title: "Visual Arts Showcase",
+      title: "Math Olympiad",
+      date: "25 Nov 2025",
       description:
-        "Display of student artwork spanning fine art, digital media, and installations.",
-      image: "/events/event5.jpg",
-      date: "01 Nov 2025",
-      href: "/news/arts-showcase",
+        "Testing analytical thinking through structured challenges.",
+      image: "/images/asn-club.jpg",
+      href: "/events/math-olympiad",
+    },
+    {
+      title: "Parent Orientation",
+      date: "28 Nov 2025",
+      description:
+        "An interactive session aligning parents with academic vision.",
+      image: "/images/asn-bg.jpg",
+      href: "/events/orientation",
     },
   ],
 };
@@ -118,19 +118,18 @@ export default function NewsEvents() {
       <SubHeader
         title="News & Events"
         subtitle="A living archive of campus life, milestones, and shared moments"
-        image="/images/news-header.jpg"
+        image="/images/asn-winter-carnival.jpg"
       />
 
-      {/* MAIN WRAPPER */}
       <section className="bg-white">
         {/* MONTH SELECTOR */}
-        <div className="w-full px-10 lg:px-28 pt-24">
-          <div className="flex gap-16 border-b border-neutral-300 pb-8">
+        <div className="w-full px-6 sm:px-10 lg:px-28 pt-16 sm:pt-24">
+          <div className="flex flex-wrap gap-6 sm:gap-10 lg:gap-16 border-b border-neutral-300 pb-6 sm:pb-8">
             {months.map((month) => (
               <button
                 key={month}
                 onClick={() => setActiveMonth(month)}
-                className={`text-2xl font-semibold tracking-wide transition ${
+                className={`text-lg sm:text-xl lg:text-2xl font-semibold tracking-wide transition ${
                   activeMonth === month
                     ? "text-black border-b-4 border-black pb-3"
                     : "text-neutral-400 hover:text-black"
@@ -143,15 +142,11 @@ export default function NewsEvents() {
         </div>
 
         {/* FEATURED EVENTS */}
-        <div className="w-full px-10 lg:px-28 mt-32">
-          <div className="grid grid-cols-1 xl:grid-cols-3 gap-24">
+        <div className="w-full px-6 sm:px-10 lg:px-28 mt-20 sm:mt-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-16 lg:gap-24">
             {featured.map((event) => (
-              <Link
-                key={event.title}
-                href={event.href}
-                className="group block"
-              >
-                <div className="relative w-full h-[620px] overflow-hidden">
+              <Link key={event.title} href={event.href} className="group block">
+                <div className="relative w-full h-[320px] sm:h-[420px] lg:h-[620px] overflow-hidden">
                   <Image
                     src={event.image}
                     alt={event.title}
@@ -160,16 +155,16 @@ export default function NewsEvents() {
                   />
                 </div>
 
-                <div className="mt-10">
-                  <p className="text-sm tracking-widest uppercase text-neutral-500">
+                <div className="mt-6 sm:mt-10">
+                  <p className="text-xs sm:text-sm tracking-widest uppercase text-neutral-500">
                     {event.date}
                   </p>
 
-                  <h2 className="mt-4 text-4xl font-extrabold text-black leading-tight">
+                  <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-black leading-tight">
                     {event.title}
                   </h2>
 
-                  <p className="mt-6 text-xl text-neutral-700 leading-relaxed">
+                  <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-neutral-700 leading-relaxed">
                     {event.description}
                   </p>
                 </div>
@@ -178,19 +173,19 @@ export default function NewsEvents() {
           </div>
         </div>
 
-        {/* VISUAL SEPARATOR */}
-        <div className="w-full h-[2px] bg-neutral-200 my-40" />
+        {/* SEPARATOR */}
+        <div className="w-full h-[2px] bg-neutral-200 my-24 sm:my-32 lg:my-40" />
 
-        {/* ARCHIVE / FULL LIST */}
-        <div className="w-full px-10 lg:px-28 pb-40">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-28">
+        {/* ARCHIVE */}
+        <div className="w-full px-6 sm:px-10 lg:px-28 pb-24 sm:pb-32 lg:pb-40">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 lg:gap-x-32 gap-y-20 lg:gap-y-28">
             {archive.map((event) => (
               <Link
                 key={event.title}
                 href={event.href}
-                className="group flex flex-col md:flex-row gap-12"
+                className="group flex flex-col sm:flex-row gap-8 sm:gap-12"
               >
-                <div className="relative w-full md:w-[320px] h-[220px] shrink-0 overflow-hidden">
+                <div className="relative w-full sm:w-[280px] lg:w-[320px] h-[200px] sm:h-[220px] shrink-0 overflow-hidden">
                   <Image
                     src={event.image}
                     alt={event.title}
@@ -200,15 +195,15 @@ export default function NewsEvents() {
                 </div>
 
                 <div className="flex flex-col justify-center">
-                  <p className="text-sm tracking-widest uppercase text-neutral-500">
+                  <p className="text-xs sm:text-sm tracking-widest uppercase text-neutral-500">
                     {event.date}
                   </p>
 
-                  <h3 className="mt-4 text-3xl font-bold text-black">
+                  <h3 className="mt-3 sm:mt-4 text-xl sm:text-2xl lg:text-3xl font-bold text-black">
                     {event.title}
                   </h3>
 
-                  <p className="mt-6 text-lg text-neutral-700 leading-relaxed">
+                  <p className="mt-4 sm:mt-6 text-base sm:text-lg text-neutral-700 leading-relaxed">
                     {event.description}
                   </p>
                 </div>

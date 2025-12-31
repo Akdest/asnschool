@@ -48,7 +48,7 @@ export default function HighSchool() {
       <SubHeader
         title="High School"
         subtitle="Empowering future leaders and innovators – Grades 11–12"
-        image="/images/high-school.jpg"
+        image="/images/asn-middle.jpg"
       />
 
       <section className="bg-white py-32">

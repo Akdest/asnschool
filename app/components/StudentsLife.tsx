@@ -10,8 +10,8 @@ const slides = [
     description:
       "A culture of discipline, teamwork, and resilience built through structured sports and physical education.",
     href: "/student-life/sports",
-    type: "image",
-    src: "/student-life/sports.jpg",
+    type: "video",
+    src: "/images/asn-sports.mp4",
   },
   {
     title: "Cultural Performances",
@@ -19,15 +19,15 @@ const slides = [
       "Music, dance, and theatre that help students express confidence and creativity.",
     href: "/student-life/culture",
     type: "video",
-    src: "/student-life/culture.mp4",
+    src: "/images/asn-intro.mp4",
   },
   {
     title: "Clubs & Societies",
     description:
       "Academic, creative, and leadership clubs that nurture curiosity beyond classrooms.",
     href: "/student-life/clubs",
-    type: "image",
-    src: "/student-life/clubs.jpg",
+    type: "video",
+    src: "/images/asn-club.mp4",
   },
 ];
 

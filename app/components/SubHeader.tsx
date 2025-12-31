@@ -24,12 +24,12 @@ export default function SubHeader({
 
       {/* CONTENT */}
       <div className="relative z-10 w-full px-6 sm:px-10 lg:px-16 text-center">
-        <h1 className="mt-6 md:text-4xl lg:text-8xl sm:text-3xl font-extrabold text-white leading-tight">
+        <h1 className="mt-6 text-5xl lg:text-8xl  font-extrabold text-white leading-tight">
           {title}
         </h1>
 
         {subtitle && (
-          <p className="mt-6 md:text-xl text-md text-white/80 leading-relaxed">
+          <p className="mt-6 text-xl md:text-2xl text-white/80 leading-relaxed">
             {subtitle}
           </p>
         )}

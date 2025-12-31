@@ -47,7 +47,7 @@ export default function EarlyYearsProgram() {
       <SubHeader
         title="Early Years Program"
         subtitle="Building strong foundations for young learners"
-        image="/images/early-years.jpg"
+        image="/images/foundation.jpg"
       />
 
       <section className="bg-white py-32">

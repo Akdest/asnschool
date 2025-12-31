@@ -99,7 +99,7 @@ export default function Academics() {
 
           <div className="relative w-full h-[460px]">
             <Image
-              src="/images/academics-senior.jpg"
+              src="/images/asn-club.jpg"
               alt="Senior Years"
               fill
               className="object-cover"

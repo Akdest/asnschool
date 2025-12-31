@@ -10,25 +10,25 @@ export default function Contact() {
       {/* BACKGROUND IMAGE */}
 <div className="fixed inset-0 -z-10">
   <Image
-    src="/campus/contact-bg.jpg"
+    src="/images/asn-sports.jpg"
     alt="Campus Background"
     fill
-    className="object-cover opacity-[0.08]"
+    className="object-cover opacity-[0.7]"
     priority
   />
   {/* NEUTRAL OVERLAY */}
-  <div className="absolute inset-0 bg-neutral-100/90" />
+  {/* <div className="absolute inset-0 bg-transparent" /> */}
 </div>
 
 
       {/* CONTENT */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
         {/* SECTION HEADER */}
-        <p className="tracking-[0.35em] text-sm font-semibold text-neutral-500 uppercase">
+        <p className="tracking-[0.35em] text-sm font-semibold text-white uppercase">
           Contact
         </p>
 
-        <h2 className="mt-6 text-4xl sm:text-5xl font-extrabold text-black">
+        <h2 className="mt-6 text-4xl sm:text-5xl font-extrabold text-white">
           Get in Touch
         </h2>
 

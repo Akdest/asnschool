@@ -16,7 +16,7 @@ type SubItem = { label: string; href: string };
 type NavItem = { title: string; href?: string; sub?: SubItem[]; image?: string };
 
 const navItems: NavItem[] = [
-  { title: "Home", href: "/", image: "/" },
+  { title: "Home", href: "/", image: "/images/asn-bg.jpg" },
   {
     title: "About",
     sub: [
@@ -24,7 +24,7 @@ const navItems: NavItem[] = [
       { label: "Management", href: "/About/Management" },
       { label: "School Committees", href: "/About/SchoolCommittee" },
     ],
-    image: "/images/asn-bg.jpg",
+    image: "/images/asn-club.jpg",
   },
   {
     title: "Academics",
@@ -43,7 +43,7 @@ const navItems: NavItem[] = [
       { label: "Process", href: "/Admissions/Process" },
       { label: "Fee Structure", href: "/Admissions/FeeStructure" },
     ],
-    image: "/hero/hero3.jpg",
+    image: "/images/foundation.jpg",
   },
   {
     title: "Student Life",
@@ -51,10 +51,10 @@ const navItems: NavItem[] = [
       { label: "Clubs", href: "/StudentsLife/Clubs" },
       { label: "Sports", href: "/StudentsLife/Sports" },
     ],
-    image: "/images/asn-play.jpg",
+    image: "/images/asn-sports.jpg",
   },
-  { title: "News & Events", href: "/NewsEvents", image: "/hero/hero5.jpg" },
-  { title: "Contact", href: "/Contact", image: "/hero/hero5.jpg" },
+  { title: "News & Events", href: "/NewsEvents", image: "/images/asn-play.jpg" },
+  { title: "Contact", href: "/Contact", image: "/images/asn-principal.jpg" },
 ];
 
 export default function Navbar() {
@@ -114,7 +114,7 @@ export default function Navbar() {
         <div className="px-6 lg:px-12 h-24 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image src="/logo.png" alt="Logo" width={44} height={44} />
-            <span className="font-bold text-lg">ABC Public School</span>
+            <span className="font-bold text-lg">ASN Public School</span>
           </div>
 
           <button
@@ -150,7 +150,6 @@ export default function Navbar() {
           </button>
 
           <div className="h-full w-full flex flex-col md:flex-row pt-28 pb-28">
-
             {/* COLUMN 1 */}
             <div className="w-full md:w-[55%] lg:w-[38%] px-6 lg:px-12 overflow-y-auto">
               <ul className="space-y-10">
@@ -160,26 +159,51 @@ export default function Navbar() {
                   return (
                     <li
                       key={item.title}
-                      onMouseEnter={() => hasSub && setActiveHover(index)}
+                      onMouseEnter={() => setActiveHover(index)}
                       onMouseLeave={() => setActiveHover(null)}
                       className="group"
                     >
                       {hasSub ? (
-                        <button
-                          onClick={() =>
-                            setActiveClick(activeClick === index ? null : index)
-                          }
-                          className="w-full flex items-center justify-between text-4xl sm:text-5xl lg:text-6xl font-extrabold"
-                        >
-                          <span className="relative">
-                            {item.title}
-                            <span className="absolute left-0 -bottom-2 h-[3px] w-0 bg-white transition-all group-hover:w-full" />
-                          </span>
-                          <ChevronRight
-                            size={36}
-                            className="opacity-0 -translate-x-2 transition-all delay-200 group-hover:opacity-100 group-hover:translate-x-0"
-                          />
-                        </button>
+                        <>
+                          <button
+                            onClick={() =>
+                              setActiveClick(
+                                activeClick === index ? null : index
+                              )
+                            }
+                            className="w-full flex items-center justify-between text-4xl sm:text-5xl lg:text-6xl font-extrabold"
+                          >
+                            <span className="relative">
+                              {item.title}
+                              <span className="absolute left-0 -bottom-2 h-[3px] w-0 bg-white transition-all group-hover:w-full" />
+                            </span>
+                            <ChevronRight
+                              size={36}
+                              className={`transition-transform duration-300  ${
+                                activeClick === index ? "rotate-90" : ""
+                              }`}
+                            />
+                          </button>
+
+                          {/* MOBILE SUBNAV */}
+                          {activeClick === index && (
+                            <div className="block md:hidden mt-4 pl-6 border-l border-white/30">
+                              <ul className="space-y-4 text-xl">
+                                {item.sub?.map((s) => (
+                                  <li key={s.label}>
+                                    <Link
+                                      href={s.href}
+                                      onClick={closeMenu}
+                                      className="block text-white/80 hover:text-white transition"
+                                    >
+                                      {s.label}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+                        </>
                       ) : (
                         <Link
                           href={item.href!}
@@ -196,7 +220,7 @@ export default function Navbar() {
               </ul>
             </div>
 
-            {/* COLUMN 2 */}
+            {/* COLUMN 2 — DESKTOP SUBNAV */}
             {activeClick !== null && showSubDelayed && (
               <div className="hidden md:block md:w-[45%] lg:w-[32%] px-6 lg:px-10 overflow-y-auto border-l border-white/20">
                 <ul className="space-y-6 pt-4 text-2xl lg:text-3xl">
@@ -211,16 +235,14 @@ export default function Navbar() {
               </div>
             )}
 
-            {/* COLUMN 3 — IMAGE */}
-            <div className="hidden lg:flex flex-1 relative overflow-hidden px-12">
+            {/* COLUMN 3 — IMAGE PREVIEW */}
+            <div className="hidden lg:flex flex-1 relative overflow-hidden mx-6">
               <div
-                className={`absolute inset-0 transition-all duration-700 ease-out px-12 ${
-                  delayedHover !== null
-                    ? "opacity-100 scale-100"
-                    : "opacity-0 scale-105"
+                className={`absolute inset-0 transition-all duration-700 ease-out ${
+                  delayedHover !== null ? "opacity-100 scale-100" : "opacity-0 scale-105"
                 }`}
               >
-                {delayedHover !== null && (
+                {delayedHover !== null && navItems[delayedHover].image && (
                   <Image
                     src={navItems[delayedHover].image!}
                     alt="Preview"
@@ -234,15 +256,15 @@ export default function Navbar() {
 
           {/* SOCIAL LINKS */}
           <div className="absolute bottom-8 left-6 flex items-center gap-6 text-white/70">
-            <a href="#" className="hover:text-white transition">
+            <Link href="#" className="hover:text-white transition">
               <Instagram size={22} />
-            </a>
-            <a href="#" className="hover:text-white transition">
+            </Link>
+            <Link href="#" className="hover:text-white transition">
               <Facebook size={22} />
-            </a>
-            <a href="#" className="hover:text-white transition">
+            </Link>
+            <Link href="#" className="hover:text-white transition">
               <Twitter size={22} />
-            </a>
+            </Link>
           </div>
         </div>
       )}

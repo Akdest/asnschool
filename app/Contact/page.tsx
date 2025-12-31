@@ -21,7 +21,7 @@ export default function ContactPage() {
       <SubHeader
         title="Contact & Campus"
         subtitle="Where learning lives. Where conversations begin."
-        image="/images/contact-header.jpg"
+        image="/images/asn-principal.jpg"
       />
 
       <section className="bg-white w-full">
