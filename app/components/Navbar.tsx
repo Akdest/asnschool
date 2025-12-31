@@ -112,14 +112,18 @@ export default function Navbar() {
         }`}
       >
         <div className="px-6 lg:px-12 h-24 flex items-center justify-between">
+
+                     <Link href="/">
+
           <div className="flex items-center gap-3">
             <Image src="/logo.png" alt="Logo" width={44} height={44} />
             <span className="font-bold text-lg">ASN Public School</span>
           </div>
+          </Link>
 
           <button
             onClick={openMenu}
-            className="flex items-center gap-3 px-6 py-3 md:py-4 bg-gray-950 hover:bg-gray-900/60 text-white"
+            className="flex items-center gap-3 px-6 py-3 md:py-4 cursor-pointer bg-gray-950 hover:bg-gray-900/60 text-white"
           >
             <Menu size={24} />
             <span className="tracking-[0.35em] hidden md:block font-semibold text-lg">
@@ -137,14 +141,15 @@ export default function Navbar() {
           }`}
         >
           {/* TOP BAR */}
+          <Link href="/">
           <div className="absolute top-6 left-6 flex items-center gap-3">
             <Image src="/logo.png" alt="Logo" width={42} height={42} />
             <span className="font-bold text-lg">ABC Public School</span>
           </div>
-
+</Link>
           <button
             onClick={closeMenu}
-            className="absolute top-6 right-6 hover:bg-gray-800/60"
+            className="absolute top-6 right-6 cursor-pointer hover:bg-gray-800/60"
           >
             <X size={36} />
           </button>

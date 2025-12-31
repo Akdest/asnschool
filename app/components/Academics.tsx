@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Academics() {
   return (
-    <section className="bg-white text-neutral-900 py-32">
+    <section id="Academics" className="bg-white text-neutral-900 py-32">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 space-y-36">
 
         {/* SECTION HEADER */}

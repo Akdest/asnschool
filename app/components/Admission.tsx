@@ -25,7 +25,7 @@ export default function Admission() {
   ];
 
   return (
-    <section className="w-full bg-gray-100 py-24">
+    <section className="w-full bg-gray-100 py-24" id="Admissions">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
         {/* Heading */}
         <div className="text-center lg:text-left">

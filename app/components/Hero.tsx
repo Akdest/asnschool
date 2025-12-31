@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BookOpen, GraduationCap, Atom } from "lucide-react";
+import { BookOpen, GraduationCap, Atom, Link } from "lucide-react";
 
 const media = ["/images/asn-intro.mp4"];
 
@@ -87,6 +87,7 @@ export default function Hero() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate-slide-up delay-300">
+             <Link href="#Admissions"> 
               <button
                 className="
                   px-8 sm:px-10 py-3 sm:py-4
@@ -96,11 +97,15 @@ export default function Hero() {
                   transition-all duration-300
                   hover:translate-y-[-2px]
                   hover:shadow-xl
+                  cursor-pointer
                 "
               >
                 Admissions
               </button>
+              </Link>
 
+
+            <Link href="#Academics">
               <button
                 className="
                   px-8 sm:px-10 py-3 sm:py-4
@@ -110,10 +115,12 @@ export default function Hero() {
                   font-medium uppercase tracking-wider
                   transition-all duration-300
                   hover:bg-white hover:text-black
+                  cursor-pointer
                 "
               >
                 About the School
               </button>
+              </Link>
             </div>
 
           </div>
